@@ -1,1 +1,3 @@
-wbz.bat
+.gitignore
+*.txt
+*.bat
