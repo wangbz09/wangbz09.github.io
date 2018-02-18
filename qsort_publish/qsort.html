@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script  src="jquery.js"></script>
+<script type="text/javascript" charset="UTF-8" src="wbztable_qsort.js"></script>
+<script type="text/javascript" charset="UTF-8" src="wbzbutton_qsort.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="wbztable_qsort.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+<span id="b"></span>
+
+<script type="text/javascript">
+		var N=20;
+		var a=new Array();
+		var a_assit=new Array();
+		
+		for(var i=0;i<N;i++){
+			a.push(wbzrandint(1,99));
+			//a.push(99);
+			a_assit.push("|");
+		}
+		var tablecaption="快速排序算法（quick sort）－－分步演示";
+		//header=["序号",	"姓名","年龄","年龄1"];
+		var header=a;
+		//footer=["footer","footer","footer","footer"];
+		rows=[a_assit];
+ 			wbztable(tablecaption,header,rows);
+			//wbztable();
+		</script>
+		<script>
+		//oper_ordinal=0;
+		//document.write("<span class=\"hide_var\" id=\"oper_ordinal\">0</span>");
+		document.write("<button id=\"oper_button\">start</button>");
+var i=1;
+var j=N-1;
+var nsteps=0;
+
+
+		</script>
+		<p class="qsort_steps"></p>
+
+
+
+</body>
+</html>
